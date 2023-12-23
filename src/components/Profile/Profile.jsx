@@ -1,27 +1,29 @@
 import './profile.css';
 
-const Profile = () => {
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div>
-      <img src="" alt="" />
-      <p></p>
-      <span></span>
-      <span></span>
-      <ul>
+    <div className="profile">
+      <div className="description">
+        <img src={avatar} alt={`${username} avatar`} className="avatar" />
+        <p className="name">{username}</p>
+        <p className="tag">{`@${tag}`}</p>
+        <p className="location">{location}</p>
+      </div>
+
+      <ul className="stats">
         <li>
-          <p></p>
-          <span></span>
+          <span className="label">Followers</span>
+          <span className="quantity"> {stats.followers}</span>
         </li>
         <li>
-          <p></p>
-          <span></span>
+          <span className="label">Views</span>
+          <span className="quantity"> {stats.views}</span>
         </li>
         <li>
-          <p></p>
-          <span></span>
+          <span className="label">Likes</span>
+          <span className="quantity"> {stats.likes}</span>
         </li>
       </ul>
-      <p className="p-color">it's placeholder for markup Profile</p>
     </div>
   );
 };
