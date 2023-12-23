@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+h2 {
+  display: inline-block;
+  font-size: 20px;
+  color: #54595f;
+}
+.statistics {
+  /* border-color: aqua; */
+  /* border-style: solid; */
+  border-width: 1px;
+
+  text-align: center;
+  margin-top: 50px;
+  max-width: 600px;
+  min-width: 320px;
+  height: 215px;
+  background-color: #ffffff;
+
+  -webkit-box-shadow: 5px 5px 15px 7px rgba(199, 199, 199, 0.86);
+  -moz-box-shadow: 5px 5px 15px 7px rgba(199, 199, 199, 0.86);
+  box-shadow: 5px 5px 15px 7px rgba(199, 199, 199, 0.86);
+}
+
+.stat_list {
+  display: flex;
+  padding: 0;
+}
+
+.item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 16px;
+}
