@@ -15,7 +15,7 @@ const Statistics = ({ title, data }) => {
 
   return (
     <section className={css.statistics}>
-      {title && <h2>{title.toUpperCase()}</h2>}
+      {title && <h2 className={css.title}>{title.toUpperCase()}</h2>}
       <ul className={css.stat_list}>{statisticItems}</ul>
     </section>
   );

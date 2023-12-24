@@ -8,7 +8,7 @@ const TransactionHistory = ({ items }) => {
   const tableRows = items.map(({ id, type, amount, currency }) => {
     return (
       <tr key={id} style={{ backgroundColor: colorizeTable() }}>
-        <td>{type}</td>
+        <td className={css.type}>{type}</td>
         <td>{amount}</td>
         <td>{currency}</td>
       </tr>
@@ -18,13 +18,13 @@ const TransactionHistory = ({ items }) => {
   return (
     <table className={css.transaction_history}>
       <thead className={css.table_head}>
-        <tr>
+        <tr className={css.table_head_item}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
       </thead>
-      <tbody>{tableRows}</tbody>
+      <tbody className={css.table_body}>{tableRows}</tbody>
     </table>
   );
 };

@@ -1,14 +1,13 @@
 .friend_list {
-  width: auto;
+  width: 325px;
+  padding: 0;
 }
 
 .item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* border-color: aqua;
-  border-style: solid;
-  border-width: 1px; */
+  /* width: 100%; */
 
   -webkit-box-shadow: 5px 5px 15px 7px rgba(199, 199, 199, 0.86);
   -moz-box-shadow: 5px 5px 15px 7px rgba(199, 199, 199, 0.86);
@@ -27,6 +26,8 @@
 }
 
 .avatar {
+  background-color: rgb(238, 238, 237);
+  border-radius: 5px;
   margin-left: 15px;
   margin: 7px 15px;
   height: 100%;
@@ -34,6 +35,6 @@
 }
 
 .name {
-  /* display: inline-block; */
-  margin: 0 15px 0 0;
+  font-size: 24px;
+  margin: 0;
 }
